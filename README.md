@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Blink Chat App
+<img width="1515" alt="image" src="https://user-images.githubusercontent.com/47919053/180273036-d6df9295-2f1f-4dfd-889c-fe3e9477858f.png">
+
+
+## How to run
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+In the project directory, you can run to start the app:
 
-In the project directory, you can run:
+`yarn`
 
-### `npm start`
+`yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Requirments
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Given the JSON data (in the assets folder):
 
-### `npm test`
+- Parse the JSON in to memory, the entire application should run off in-memory state, how you structure this state is up to you. You are also free to use any state-management library/tool/technique to make the application work. The JSON consists of an Array of conversations, each containing an Array of messages.
+- Render a sorted list of the conversations on the left of the screen (sorted by last_updated, newest at the top)
+- When clicking on a conversation → Render a sorted list of messages on the right of the screen (sorted by last_updated, oldest at the top)
+- Show a basic 'reply' section at the bottom with a text field and 'Send' button to add a new message to the conversation
+- On typing a message in the textfield and clicking 'Send', the textfield should be cleared and the message should be added to the bottom of the list of messages along with the correct date
+- For each message, show the date (formatted however you prefer) and the text of the message on a second line
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wireframes
 
-### `npm run build`
+<img width="1664" alt="image" src="https://user-images.githubusercontent.com/47919053/180273542-8f94f2f5-c8bd-4cc1-a83e-430cd3af1fe1.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Limitations
+If I had more time, I would have:
+- added some unit tests to for the specific components
+- created an `Edit Message` functionality
+- improved the styling significantly
